@@ -29,7 +29,7 @@ db.connect(err => {
 });
 
 // === API ROUTES UNTUK CRUD ===
-
+//bug fixing
 // 1. CREATE (Membuat data baru) - Method: POST
 app.post('/biodata', (req, res) => {
   const { nama, nim, kelas } = req.body;
