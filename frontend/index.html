@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📝 Aplikasi Data Mahasiswa</h1>
+            <p>Kelola data mahasiswa dengan mudah.</p>
+        </header>
+
+        <div class="form-card">
+            <h2>Tambah Mahasiswa Baru</h2>
+            <form id="add-form">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" required>
+                </div>
+                <div class="form-group">
+                    <label for="kelas">Kelas</label>
+                    <input type="text" id="kelas" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </form>
+        </div>
+
+        <main id="data-mahasiswa">
+            </main>
+    </div>
+
+    <div id="edit-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeEditModal()">&times;</span>
+            <h2>Edit Data Mahasiswa</h2>
+            <form id="edit-form">
+                <input type="hidden" id="edit-id">
+                <div class="form-group">
+                    <label for="edit-nama">Nama</label>
+                    <input type="text" id="edit-nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-nim">NIM</label>
+                    <input type="text" id="edit-nim" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-kelas">Kelas</label>
+                    <input type="text" id="edit-kelas" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Update Data</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
